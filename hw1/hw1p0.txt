@@ -1,0 +1,11 @@
+
+1.
+	A) perldoc -f perlfunc                                                                   
+  		The -f option followed by the name of a perl built in function will      
+       		extract the documentation of this function from the perlfunc manpage.
+
+	B) perldoc -f push
+
+	C) perldoc -q FAQRegex
+
+	D) perldoc -q perl6

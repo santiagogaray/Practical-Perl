@@ -1,0 +1,30 @@
+A)
+When I type:
+http://elmo.dce.harvard.edu/~username/hw2/hw2p6.cgi 
+It displays:
+QUERY STRING IS: Buffer contains: 
+That is, empty strings.
+
+1. The QUERY_STRING enviroment variable handles a string 
+when is used an html 'GET' action to send the input fields' text
+within the URL.
+
+2. The buffer variable is loaded with information when the cgi
+file is called within a 'POST' method and then the fields' text
+is sent to the program using standard input.
+
+B)
+When you type:
+http://elmo.dce.harvard.edu/~username/hw2/hw2p6.cgi?field1=hello
+It displays:
+QUERY STRING IS: field1=hello Buffer contains: 
+That is a QUERY STRING and an empty buffer.
+
+1. The QUERY_STRING variable is handling in a "direct" way the
+information posted in the URL after de '?' symbol.
+
+2. The buffer is not receiving any data because the lack of a
+'POST' html command. The 'GET' command whould send the data
+only through the QUERY_STRING variable. Therefore 'POST' is neccesary
+to place the information in the buffer.
+
